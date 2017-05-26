@@ -1,0 +1,43 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  -webkit-font-feature-settings: "kern", "liga", "pnum";
+  -moz-font-feature-settings: "kern", "liga", "pnum";
+  -ms-font-feature-settings: "kern", "liga", "pnum";
+  font-feature-settings: "kern", "liga", "pnum";
+  -webkit-font-smoothing: antialiased;
+  background: #ffffff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.__wrapper {
+  width: 960px;
+  padding: 0 20px;
+  margin: auto;
+}
+
+h2.title {
+  font-size: 50px;
+  font-weight: 300;
+  margin: 20px 0;
+}
+
+h3.subtitle {
+  font-size: 40px;
+  font-weight: 300;
+  margin: 15px 0;
+}
+
+.__wrapper p {
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 25px;
+}
+
+.__wrapper hr {
+  border: 1px solid #e8e8e8;
+  margin: 40px 0;
+}

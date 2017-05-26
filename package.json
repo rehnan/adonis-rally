@@ -1,0 +1,82 @@
+{
+  "name": "adonis-rally",
+  "version": "3.0.1",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --watch app --watch bootstrap --watch config --watch .env -x node server.js",
+    "start": "node server.js",
+    "pretest": "ENV_PATH=.env.test ./ace migration:refresh",
+    "test": "node bin/test.js",
+    "lint": "standard app/{**,**/**}/*.js tests/{*,**/*}.js"
+  },
+  "standard": {
+    "globals": [
+      "make",
+      "use",
+      "describe",
+      "before",
+      "after",
+      "it",
+      "afterEach",
+      "beforeEach"
+    ]
+  },
+  "author": "",
+  "license": "MIT",
+  "description": "Adonis rally is a forum created using VueJs and AdonisJs. The API of the framework is written is Adonis and checkout the rally-frontend repo to grab the VueJs code.",
+  "private": true,
+  "dependencies": {
+    "adonis-ace": "^3.0.4",
+    "adonis-auth": "^1.0.4",
+    "adonis-commands": "^2.1.2",
+    "adonis-fold": "^3.0.3",
+    "adonis-framework": "^3.0.7",
+    "adonis-lucid": "^3.0.10",
+    "adonis-mail-provider": "^2.0.2",
+    "adonis-middleware": "^1.0.9",
+    "adonis-validation-provider": "^3.0.4",
+    "mocha": "^3.2.0",
+    "mysql": "^2.12.0",
+    "node-exceptions": "^1.0.3",
+    "node-uuid": "^1.4.7",
+    "slug": "^0.9.1",
+    "sqlite3": "https://registry.npmjs.org/sqlite3/-/sqlite3-3.1.8.tgz",
+    "standard": "^8.6.0",
+    "uuid": "https://registry.npmjs.org/uuid/-/uuid-2.0.3.tgz",
+    "yargs": "^6.5.0"
+  },
+  "autoload": {
+    "App": "./app"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "co": "^4.6.0",
+    "co-fs": "^1.2.0",
+    "co-mocha": "^1.1.3",
+    "colors": "^1.1.2",
+    "globby": "^6.1.0",
+    "lodash": "^4.17.2",
+    "mailparser": "^0.6.1",
+    "mocha": "^3.2.0",
+    "ms": "^0.7.2",
+    "nodemon": "^1.11.0",
+    "sqlite3": "^3.1.8",
+    "standard": "^8.6.0",
+    "supertest": "^2.0.1",
+    "yargs": "^6.5.0"
+  },
+  "bin": {
+    "adonis-rally": "bootstrap.js"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adonisjs/adonis-rally.git"
+  },
+  "bugs": {
+    "url": "https://github.com/adonisjs/adonis-rally/issues"
+  },
+  "homepage": "https://github.com/adonisjs/adonis-rally#readme"
+}
