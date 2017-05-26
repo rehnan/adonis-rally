@@ -26,12 +26,15 @@ Setting up the project is quite easy. Start by cloning the repo.
 git clone https://github.com/adonisjs/adonis-rally
 ```
 
-#### make install
+#### npm install and update
+```bash
+npm update
+```
 
-Make install will perform all the require steps to setup the application for you.
+#### create .env
 
 ```bash
-make install
+cp .env.example .env
 ```
 
 #### running the server
@@ -103,4 +106,3 @@ Feel free to fork and work on the missing parts of the application and create a 
 - [ ] Edit/Update answer (when loggedin and answer owner)
 - [ ] Delete answer (when loggedin and answer owner)
 - [ ] Mark answer as a best answer.
-# adonis-rally
